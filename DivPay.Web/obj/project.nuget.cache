@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "b6BVn/qVzog33zoKODaedGB6FaUg8Kpv/hNFOg0S6GxrFqKRxUSgHXTB2GiSj3FTqz0YqTgTCOAPFFoSKDL+6Q==",
+  "success": true,
+  "projectFilePath": "C:\\Code\\DivPay\\DivPay.Web\\DivPay.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ricardo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://vm-build/VCOMNugetServer/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}

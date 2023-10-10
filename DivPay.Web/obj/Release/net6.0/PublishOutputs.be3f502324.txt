@@ -1,0 +1,8 @@
+C:\Code\DivPay\DivPay.Web\obj\Release\net6.0\PubTmp\Out\DivPay.Web.exe
+C:\Code\DivPay\DivPay.Web\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Code\DivPay\DivPay.Web\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Code\DivPay\DivPay.Web\obj\Release\net6.0\PubTmp\Out\DivPay.Web.dll
+C:\Code\DivPay\DivPay.Web\obj\Release\net6.0\PubTmp\Out\DivPay.Web.deps.json
+C:\Code\DivPay\DivPay.Web\obj\Release\net6.0\PubTmp\Out\DivPay.Web.runtimeconfig.json
+C:\Code\DivPay\DivPay.Web\obj\Release\net6.0\PubTmp\Out\DivPay.Web.pdb
+C:\Code\DivPay\DivPay.Web\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll

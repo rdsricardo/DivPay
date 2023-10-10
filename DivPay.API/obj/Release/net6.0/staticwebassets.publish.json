@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WgAtXV1shmLqr9zHqs+GhepmsE6Cnd/xBnz0NduowWM=",
+  "Source": "DivPay.API",
+  "BasePath": "_content/DivPay.API",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

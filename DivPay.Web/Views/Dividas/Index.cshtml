@@ -1,0 +1,96 @@
+﻿@model IEnumerable<Divida>
+
+@{
+    ViewData["Title"] = "Dívidas";
+}
+
+<main>
+    <div class="col-md-12 mx-auto">
+        <div class="col-md-12">
+            <h2 class="fs-1 fw-bolder mb-4 text-start">Dívidas</h2>
+        </div>
+
+        <div class="table-responsive col-md-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            #
+                        </th>
+                        <th scope="col">
+                            @Html.DisplayNameFor(model => model.NumeroContrato)
+                        </th>
+                        <th scope="col">
+                            @Html.DisplayNameFor(model => model.Cliente.Nome)
+                        </th>
+                        <th scope="col">
+                            @Html.DisplayNameFor(model => model.Cliente.CpfCnpj)
+                        </th>
+                        <th scope="col">
+                            @Html.DisplayNameFor(model => model.NomeCredor)
+                        </th>
+                        <th scope="col">
+                            @Html.DisplayNameFor(model => model.Descricao)
+                        </th>
+                        <th scope="col">
+                            @Html.DisplayNameFor(model => model.TotalOriginal)
+                        </th>
+                        <th scope="col">
+                            @Html.DisplayNameFor(model => model.Identificador)
+                        </th>
+                        <th scope="col">
+                            @Html.DisplayNameFor(model => model.Pago)
+                        </th>
+                        <th scope="col">
+                            @Html.DisplayNameFor(model => model.Token)
+                        </th>
+                        <th><a asp-action="Create">Nova dívida</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.OrderBy(m => m.DividaId))
+                    {
+                        <tr>
+                            <td scope="row">
+                                @Html.DisplayFor(modelItem => item.DividaId)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NumeroContrato)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Cliente.Nome)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Cliente.CpfCnpj)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NomeCredor)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Descricao)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TotalOriginal)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Identificador)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Pago)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Token)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Editar", "Edit", new { id = item.DividaId }) |
+                                @Html.ActionLink("Detalhes", "Details", new { id = item.DividaId }) |
+                                @Html.ActionLink("Excluir", "Delete", new { id = item.DividaId })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</main>

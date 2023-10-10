@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DivPay.Web", "DivPay.Web\DivPay.Web.csproj", "{DE3DB69B-8936-47AB-92B6-19A552FABD97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackEnd", "BackEnd", "{4D9A4685-C756-4140-A9D3-BD7726A4DD99}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DivPay.API", "DivPay.API\DivPay.API.csproj", "{3D4AD8A8-8B8F-45CC-8E11-703DD95F3378}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{9DA0DC25-FF2B-47C7-AF81-5A697BD4174C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DivPay.AuthProvider", "DivPay.AuthProvider\DivPay.AuthProvider.csproj", "{E3F212E7-44E5-4FD2-9A45-4F5BB669CC64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DivPay.DAL", "DivPay.DAL\DivPay.DAL.csproj", "{4C999703-B845-47EF-A7FD-D7B5EF090BE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE3DB69B-8936-47AB-92B6-19A552FABD97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE3DB69B-8936-47AB-92B6-19A552FABD97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE3DB69B-8936-47AB-92B6-19A552FABD97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE3DB69B-8936-47AB-92B6-19A552FABD97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D4AD8A8-8B8F-45CC-8E11-703DD95F3378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4AD8A8-8B8F-45CC-8E11-703DD95F3378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4AD8A8-8B8F-45CC-8E11-703DD95F3378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4AD8A8-8B8F-45CC-8E11-703DD95F3378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3F212E7-44E5-4FD2-9A45-4F5BB669CC64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F212E7-44E5-4FD2-9A45-4F5BB669CC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F212E7-44E5-4FD2-9A45-4F5BB669CC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F212E7-44E5-4FD2-9A45-4F5BB669CC64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C999703-B845-47EF-A7FD-D7B5EF090BE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C999703-B845-47EF-A7FD-D7B5EF090BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C999703-B845-47EF-A7FD-D7B5EF090BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C999703-B845-47EF-A7FD-D7B5EF090BE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE3DB69B-8936-47AB-92B6-19A552FABD97} = {9DA0DC25-FF2B-47C7-AF81-5A697BD4174C}
+		{3D4AD8A8-8B8F-45CC-8E11-703DD95F3378} = {4D9A4685-C756-4140-A9D3-BD7726A4DD99}
+		{E3F212E7-44E5-4FD2-9A45-4F5BB669CC64} = {4D9A4685-C756-4140-A9D3-BD7726A4DD99}
+		{4C999703-B845-47EF-A7FD-D7B5EF090BE4} = {4D9A4685-C756-4140-A9D3-BD7726A4DD99}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81F18E2D-F3C6-4C49-A079-5E648E5177AF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "DivPay - Sistema de Pagamento de Dívidas";
+}
+
+@{
+    if (@User.Identity.IsAuthenticated)
+    {
+        <div class="text-center">
+            <h4>Bem vindo, @User.Claims.FirstOrDefault(c => c.Type == "Nome")?.Value</h4>
+        </div>
+    }
+}

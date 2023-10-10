@@ -1,0 +1,38 @@
+﻿@model UsuarioLogin
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<main>
+    <div class="col-md-8 mx-auto">
+        <div class="col-md-8 offset-md-2">
+            <h2 class="fs-1 fw-bolder mb-4 text-start">Login</h2>
+        </div>
+
+        <form asp-action="Login" method="post">
+            <div class="text-start col-md-8 mx-auto">
+
+                <div class="mb-3">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Login"></label>
+                    <input class="form-control" placeholder="Login" asp-for="Login" autofocus>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Senha"></label>
+                    <input type="password" class="form-control" placeholder="Senha" asp-for="Senha" autocomplete="off">
+                </div>
+
+                <button class="btn btn-primary d-block ms-auto mt-auto me-0 px-4 rounded">
+                    Login
+                </button>
+            </div>
+        </form>
+    </div>
+</main>
+
+

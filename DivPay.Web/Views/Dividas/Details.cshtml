@@ -1,0 +1,272 @@
+﻿@model Divida
+
+@{
+    ViewData["Title"] = "Detalhes Dívida";
+}
+
+<main>
+    <div class="col-md-12 mx-auto">
+        <div class="col-md-12">
+            <h2 class="fs-1 fw-bolder mb-4 text-start">Detalhes da Dívida</h2>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+            <div class="row">
+                <h3>Contrato: @Html.DisplayFor(model => model.NumeroContrato)</h3>
+            </div>
+
+            <div class="row">
+                <div class="mb-3 col-md-6">
+                    <span class="fw-bold">@Html.DisplayNameFor(model => model.NomeCredor)</span>
+                    @Html.DisplayFor(model => model.NomeCredor)
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <span class="fw-bold">@Html.DisplayNameFor(model => model.CpfCnpjCredor)</span>
+                    @Html.DisplayFor(model => model.CpfCnpjCredor)
+                </div>
+            </div>
+        
+
+            <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <span class="fw-bold">@Html.DisplayNameFor(model => model.TelefoneContato)</span>
+                        @Html.DisplayFor(model => model.TelefoneContato)
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <span class="fw-bold">@Html.DisplayNameFor(model => model.EmailContato)</span>
+                        @Html.DisplayFor(model => model.EmailContato)
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <span class="fw-bold">@Html.DisplayNameFor(model => model.LinkWhatsappContato)</span>
+                        @Html.DisplayFor(model => model.LinkWhatsappContato)
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <span class="fw-bold">@Html.DisplayNameFor(model => model.LinkSiteContato)</span>
+                        @Html.DisplayFor(model => model.LinkSiteContato)
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+                <div class="row">
+                    <div class="mb-3 col-md-12">
+                        <span class="fw-bold">@Html.DisplayNameFor(model => model.Descricao)</span>
+                        @Html.DisplayFor(model => model.Descricao)
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <span class="fw-bold">@Html.DisplayNameFor(model => model.UrlNotificacao)</span>
+                        @Html.DisplayFor(model => model.UrlNotificacao)
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <span class="fw-bold">@Html.DisplayNameFor(model => model.Identificador)</span>
+                        @Html.DisplayFor(model => model.Identificador)
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <span class="fw-bold">@Html.DisplayNameFor(model => model.Token)</span>
+                        @Html.DisplayFor(model => model.Token)
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <span class="fw-bold">@Html.DisplayNameFor(model => model.TotalOriginal)</span>
+                        @Html.DisplayFor(model => model.TotalOriginal)
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+                <div class="row">
+                    <div class="mb-3 col-md-6">
+                        <span class="fw-bold">@Html.DisplayNameFor(model => model.StatusPagamento)</span>
+                        @Html.DisplayFor(model => model.StatusPagamento)
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <span class="fw-bold">@Html.DisplayNameFor(model => model.Pago)</span>
+                        @Html.DisplayFor(model => model.Pago)
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                @Html.ActionLink("Editar", "Edit", new { id = Model.DividaId }) |
+                <a asp-action="Index">Voltar</a>
+            </div>
+
+        </div>
+
+        <br />
+
+        <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+            <div class="row">
+                <h4>Cliente: @Html.DisplayFor(model => model.Cliente.Nome)</h4>
+            </div>
+
+            <div class="row">
+                <div class="mb-3 col-md-6">
+                    <span class="fw-bold">@Html.DisplayNameFor(model => model.Cliente.CpfCnpj)</span>
+                    @Html.DisplayFor(model => model.Cliente.CpfCnpj)
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <span class="fw-bold">@Html.DisplayNameFor(model => model.Cliente.RG)</span>
+                    @Html.DisplayFor(model => model.Cliente.RG)
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="mb-3 col-md-4">
+                    <h5>Endereços</h5>
+
+                    <div class="table-responsive col-md-12">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        #
+                                    </th>
+                                    <th scope="col">
+                                        @Html.DisplayNameFor(model => model.Cliente.Enderecos.First().Logradouro)
+                                    </th>
+                                    <th scope="col">
+                                        @Html.DisplayNameFor(model => model.Cliente.Enderecos.First().Numero)
+                                    </th>
+                                    <th scope="col">
+                                        @Html.DisplayNameFor(model => model.Cliente.Enderecos.First().CEP)
+                                    </th>
+                                    <th><a asp-action="Create">Novo endereço</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Cliente.Enderecos.OrderBy(e => e.EnderecoId))
+                                {
+                                    <tr>
+                                        <td scope="row">
+                                            @Html.DisplayFor(modelItem => item.EnderecoId)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Logradouro)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Numero)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.CEP)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Editar", "Edit", new { id = item.EnderecoId }) |
+                                            @Html.ActionLink("Excluir", "Delete", new { id = item.EnderecoId })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="mb-3 col-md-4">
+                    <h5>Telefones</h5>
+
+                    <div class="table-responsive col-md-12">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        #
+                                    </th>
+                                    <th scope="col">
+                                        @Html.DisplayNameFor(model => model.Cliente.Telefones.First().DDD)
+                                    </th>
+                                    <th scope="col">
+                                        @Html.DisplayNameFor(model => model.Cliente.Telefones.First().Numero)
+                                    </th>
+                                    <th><a asp-action="Create">Novo telefone</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Cliente.Telefones.OrderBy(t => t.TelefoneId))
+                                {
+                                    <tr>
+                                        <td scope="row">
+                                            @Html.DisplayFor(modelItem => item.TelefoneId)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.DDD)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Numero)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Editar", "Edit", new { id = item.TelefoneId }) |
+                                            @Html.ActionLink("Excluir", "Delete", new { id = item.TelefoneId })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="mb-3 col-md-4">
+                    <h5>E-Mails</h5>
+
+                    <div class="table-responsive col-md-12">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        #
+                                    </th>
+                                    <th scope="col">
+                                        @Html.DisplayNameFor(model => model.Cliente.Emails.First().Endereco)
+                                    </th>
+                                    <th><a asp-action="Create">Novo telefone</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Cliente.Emails.OrderBy(e => e.EmailId))
+                                {
+                                    <tr>
+                                        <td scope="row">
+                                            @Html.DisplayFor(modelItem => item.EmailId)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Endereco)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Editar", "Edit", new { id = item.EmailId }) |
+                                            @Html.ActionLink("Excluir", "Delete", new { id = item.EmailId })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
